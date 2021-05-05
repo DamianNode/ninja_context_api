@@ -6,7 +6,8 @@ const Navbar = () => {
   return (
     <ThemeContext.Consumer>
       {context => {
-        const { isLightTheme, lightTheme, darkTheme } = context
+        const { isLightTheme, lightTheme, darkTheme } = context;
+        console.log(context)
         const theme = isLightTheme ? lightTheme : darkTheme;
         return (
           <nav style={{backgroundColor: theme.colors.backgroundColor, color: theme.colors.textColor}}>

@@ -31,8 +31,12 @@ const ThemeContextProvider = ({children}) => {
         }
     });
 
+    const toggleTheme = () => {
+        setState({...state, isLightTheme: !state.isLightTheme});
+    }
+
     return (
-        <ThemeContext.Provider value={{...state}}>
+        <ThemeContext.Provider value={{...state, toggleTheme}}>
             {children}
         </ThemeContext.Provider>
     )

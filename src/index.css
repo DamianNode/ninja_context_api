@@ -36,3 +36,15 @@ nav ul li {
   margin: 10px auto;
   border-radius: 10px;
 }
+.btn-toggle {
+  border: 2px solid red;
+  background-color: white;
+  color: red;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.btn-toggle:hover {
+  background-color: red;
+  color: white;
+  border: 2px solid white;
+}
